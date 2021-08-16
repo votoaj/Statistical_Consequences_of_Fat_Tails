@@ -14,7 +14,7 @@ def MD(x):
 
 
 # import S&P500 data
-spx = pd.read_excel(r'C:\Users\votoaj\Documents\Excel\SPX.xlsx',sheet_name='spx')
+spx = pd.read_excel(r'C:\SPX.xlsx',sheet_name='spx')
 
 daily_spx = np.array(spx['Adj Close'])
 daily_spx = daily_spx[::-1]
@@ -40,7 +40,7 @@ plt.loglog(absRandGauss,survFuncGauss,'.',color='b',label='randGauss')
 plt.xlabel('|X|')
 plt.ylabel('P>|X|')
 plt.legend()
-#plt.savefig(r'C:\Users\votoaj\Pictures\png\Figure10.1.png')
+#plt.savefig(r'C:\Figure10.1.png')
 
 #----------------------------------------------------------------------------------------------------------
 
@@ -355,7 +355,7 @@ for day in days:
     
 
 #plt.show()
-fig.savefig(r'C:\Users\votoaj\Pictures\png\subplot.png')
+fig.savefig(r'C:\subplot.png')
 
 #----------------------------------------------------------------------------------------------------------
 
